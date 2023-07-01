@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-page</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="../index.html">MeShop.</a>
+          </div>
+  
+          <nav>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./login.html">Login</a></li>
+              <li><a href="../signup/signup.html">Signup</a></li>
+              <li><a href="../myCart/cart.html">My Cart</a></li>
+            
+            </ul>
+          </nav>
+        </div>
+        </div>
+
+        
+        <form id="form">
+          <h4>Login</h4>
+          <input type="email" id="email" placeholder="Email" required>
+
+          <input type="password" id="password" placeholder="Password" required>
+
+          <div class="error">
+            <span class="signup_error"><i class="fa-solid fa-circle-exclamation">
+            </i> Please sign up first!!</span>
+
+            <span class="incorrect-pass"><i class="fa-solid fa-circle-exclamation"></i>
+               username or password you entered is incorrect.</span>
+          </div>
+          <button type="submit" class="signup-btn" id="signup-btn">Login</button>
+        </form>
+
+
+
+    <script src="login.js"></script>
+</body>
+</html>

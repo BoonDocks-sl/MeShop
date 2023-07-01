@@ -1,0 +1,85 @@
+/* font */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&display=swap');
+
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: 'Inter', sans-serif;
+  }
+  .navbar{
+    background-color: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px; /*chnage*/
+    position: sticky;
+    z-index: 100;
+    border-bottom: 1px solid white;
+  }
+  
+  .logo{
+    font-weight: 700;
+  }
+  a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+  }
+
+.profile, .resetPassword{
+  display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin:45px;
+}
+h1{
+  /* display: flex; */
+  text-align: center;
+  /* align-items: center; */
+  align-content: center;
+}
+input{
+  border: 1px solid black;
+  outline: none;
+  /* margin: 20px; */
+  padding:  10px 15px;
+  
+}
+  button{
+    background-color: black;
+    color: white;
+    width: 15%;
+    /* max-width: 130px; */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 300;
+    align-content: center;
+  }
+  button:hover{
+    background-color: gray;
+    color: black;
+  }
+
+  .err-old, .newpass-mismatch{
+    color: red;
+    display: none;
+}
+
+.pass-changed{
+    color: #30bb47;
+    display: none;
+}
+
+.infoSaved{
+    color: #30bb47;
+    display: none;
+}
+  

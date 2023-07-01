@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>profile-page</title>
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+            <!-- remaining -->
+          <a href="../shop/shop.html">Shopping Cart</a>  
+        </div>
+      </div>
+    </div>
+
+    
+    <main class="main-conatiner">
+      <div class="proile-div">
+        <h1>My Profile</h1>
+        <input type="text" placeholder="First Name" id="f-name">
+        <input type="text" placeholder="Last Name" id="l-name">
+        <div class="message">
+          <span class="infoSaved-mess"><i class="fa-solid fa-circle-check" style="color: #30bb47;">
+          </i> Your changes has been successfully saved</span>
+        </div>
+        <button type="button" id="saveInfo-btn">Save Info</button>
+      </div>
+      <form class="pass-div" id="pass-form">
+        <h1>Change Password</h1>
+        <input type="password" id="old-pass" placeholder="Old Password">
+        <input type="password" id="new-pass" placeholder="Password">
+        <input type="password" id="cnew-pass" placeholder="Confirm Password">
+        <div class="messages">
+          <span class="err-old"><i class="fa-solid fa-circle-exclamation"></i>
+             Your old password was entered incorrectly</span>
+          <span class="newpass-mismatch"><i class="fa-solid fa-circle-exclamation"></i>
+             Password mismatch</span>
+          <span class="pass-changed"><i class="fa-solid fa-circle-check" style="color: #30bb47;"></i> 
+            Password changed</span>
+        </div>
+        <button type="submit" id="changepass-btn">Change Password</button>
+        <button type="button" id="logout-btn">Logout</button>
+      </form>
+    </main>
+
+
+
+    <script src="./profile.js"></script>
+  </body>
+</html>

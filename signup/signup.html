@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp-page</title>
+    <link rel="stylesheet" href="signup.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="../index.html">MeShop.</a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../login/login.html">Login</a></li>
+            <li><a href="./signup.html">Signup</a></li>
+            <li><a href="./signup.html">My Cart</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- main signup form -->
+
+    <main class="main-conatiner">
+      
+      <form id="form">
+        <h3>Signup</h3>
+        <input type="text" id="firstName" placeholder="First Name" required />
+        
+        <input type="text" id="lastName" placeholder="Last Name" required />
+        
+        <input type="email" id="email" placeholder="Email" required />
+        
+        <input type="password" id="password" placeholder="Password" required />
+        
+        <input
+          type="password" id="confirmPassword" placeholder="Confirm Password" required/>
+        
+
+        <div class="error-mes">
+          <span class="used-email">
+            <i class="fa-solid fa-circle-exclamation"></i>Email Already used</span>
+
+          <span class="error-fields">
+            <i class="fa-solid fa-circle-exclamation"></i>Field can not be empty</span>
+          <span class="pass-mismatch">
+            <i class="fa-solid fa-circle-exclamation"></i>Password not match</span>
+        </div>
+
+
+        <button type="submit" id="signup-btn" class="signup-btn">Signup</button>
+      </form>
+    </main>
+
+    <script src="signup.js"></script>
+  </body>
+</html>
