@@ -31,44 +31,48 @@
     color:white;
     font-size: 20px;
   }
+  .main-conatiner{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 0 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 
-.profile, .resetPassword{
-  display: flex;
+.proile-div{
+    display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin:45px;
 }
-h1{
-  /* display: flex; */
-  text-align: center;
-  /* align-items: center; */
-  align-content: center;
+
+.pass-div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
+
 input{
-  border: 1px solid black;
-  outline: none;
-  /* margin: 20px; */
-  padding:  10px 15px;
-  
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    outline: none;
 }
-  button{
+
+h1{
+    align-self: center;
+}
+
+#logout-btn, #changepass-btn, #saveInfo-btn {
+    max-width: 148px;
+    border: none;
     background-color: black;
     color: white;
-    width: 15%;
-    /* max-width: 130px; */
-    border: none;
-    padding: 10px 15px;
+    padding: 0.5rem 1rem;
     cursor: pointer;
-    font-size: 15px;
-    font-weight: 300;
-    align-content: center;
-  }
-  button:hover{
-    background-color: gray;
-    color: black;
-  }
+}
 
-  .err-old, .newpass-mismatch{
+.err-old, .newpass-mismatch{
     color: red;
     display: none;
 }
@@ -78,8 +82,7 @@ input{
     display: none;
 }
 
-.infoSaved{
+.infoSaved-mess{
     color: #30bb47;
     display: none;
 }
-  
